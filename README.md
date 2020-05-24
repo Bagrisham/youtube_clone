@@ -1,4 +1,4 @@
-Link to project: https://www.bagrisham.github.io/youtube_clone/
+Link to project: https://bagrisham.github.io/youtube_clone/
 
 -----------------------------------------------
 
