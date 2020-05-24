@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/body.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4c/YouTube_icon.png">
+    <title>Not-Youtube</title>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <svg viewbox='0 0 24 24' id="menu-icon">
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+        </a>
+        <a href="https://www.youtube.com/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/753px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="" id="youtube-icon">
+        </a>
+        
+        <div class="middle">
+            <form class="searchbar">
+                <input type="text" name="" class="searchbar__input" placeholder="Search">
+                <button class="searchbar__btn">
+                    <svg viewbox='0 0 24 24'>
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                    </svg>
+                </button>
+            </form>
+        </div>
+        
+        <div class="headerRight-btns">
+            <button id="makeVid">
+                <svg viewbox='0 0 24 24'>
+                    <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"></path>
+                </svg>
+            </button>
+            <button>
+                <svg viewbox='0 0 24 24'>
+                    <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"></path>
+                </svg>
+            </button>
+            <button>
+                <svg viewbox='0 0 24 24'>
+                    <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                </svg>
+            </button>
+            <button id="signIn">
+                <svg viewbox='0 0 24 24'>
+                    <path d="M12,0 C18.62375,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z"></path>
+                </svg>
+                <div>Sign In</div>
+            </button>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <main>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=Iwuy4hHO3YQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <div class="video-info">
+                <div class="video-info__title"> Video Killed The Radio Star</div>
+
+                <div class="video-info__below">
+                    <div class="video-info__below--left">
+                        <span>3,913,632 views</span>
+                        <span>•</span>
+                        <span>Jul 31, 2013</span>
+                    </div>
+
+                    <div class="video-info__below--right">
+                        <div class="like-btns">
+                            <button>
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                                </svg>
+                                <span>49K</span>
+                            </button>
+                            <button>
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" "></path>
+                                </svg>
+                                <span>3.7K</span>
+                            </button>
+                        </div>
+                      
+                        <div class="other-btns">
+                            <button>
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M11.7333 8.26667V4L19.2 11.4667L11.7333 18.9333V14.56C6.4 14.56 2.66667 16.2667 0 20C1.06667 14.6667 4.26667 9.33333 11.7333 8.26667Z" "></path>
+                                </svg>
+                                <span>share</span>
+                            </button>
+                            <button>
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z" "></path>
+                                </svg>
+                                <span>save</span>
+                            </button>
+                            <button>
+                                <svg viewbox='0 0 24 24'>
+                                    <circle cx="5" cy="12" r="2" "></circle>
+                                    <circle cx="12" cy="12" r="2" "></circle>
+                                    <circle cx="19" cy="12" r="2" "></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="channel-section">
+                <div class="channel-info">
+                    <a href="https://www.youtube.com/channel/UCnIpeWNFivBwKP7ujv_03EQ">
+                        <img src="https://yt3.ggpht.com/H0SA__JPtu4U2oGn8djB-flbow8SKgqXVqd2MNWdtpxZsMIiwD_R9DnrBPAFEZ2ZkqeOQW-lHg=s88-c-k-c0xffffffff-no-nd-rj" alt="Youtube channel picture">
+                    </a>
+                    <div class="channel-info__middle">
+                        <span>
+                            <a href="https://www.youtube.com/channel/UCnIpeWNFivBwKP7ujv_03EQ">
+                                <span>The Buggles - Topic</span>
+                            </a>
+                            <svg viewbox='0 0 24 24'>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z"></path>
+                            </svg>
+                        </span>
+                        <span>7.31k subscribers</span>
+                    </div>
+                    <button>SUBSCRIBE</button>
+                </div>
+
+                <div class="video-content-information">
+                    <div>Hey. Hope you like this YouTube clone. <br> Figured there would be some irony by putting this video here. This song was the first music video on MTV.</div>
+                    <br>
+                    <section class="video-content-information__moreInfo">
+                        <span dir="auto">
+Didn't expect this to work. Huh.
+                        </span>
+                    </section>
+
+                    <button id="showMore">SHOW MORE</button>
+                </div>
+            </div>
+
+            <div class="comment-header">
+                <div class="comment-header__counts">7.5 Billion Comments</div>
+                <button>
+                    <svg viewbox='0 0 24 24'>
+                        <path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" class="style-scope yt-icon"></path>
+                    </svg>
+                    <div>SORT BY</div>
+                </button>
+            </div>
+
+            <div class="add-comment">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="avatar image">
+                <input type="text" placeholder="Add a public comment...">
+            </div>
+
+            <div class="comments">
+                <div class="comment-section">
+                    <img src="https://yt3.ggpht.com/a/AATXAJw6fZb3JVLa-_-ArAvfjPp8ML2ngMXBjHvbkg=s48-c-k-c0xffffffff-no-rj-mo" alt="commenter-avatar" class="comment-section__img">
+                    <div class="comment-section__text">
+                        <div class="comment-section__header">
+                            <div class="comment-section__header__name">Some Lady</div>
+                            <div class="comment-section__header__date">9 months ago</div>
+                        </div>
+                        <p class="comment-section__content">
+                            I 'literally' just heard this song for the first time. I LOVE Radiohead.
+                        </p>
+                        <div class="comment-section__bottom">
+                            <button class="comment-section__likeBtns">
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                                </svg>
+                                <div>-2</div>
+                            </button>
+                            <button class="comment-section__likeBtns">
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+                                </svg>
+                                <div>REPLY</div>
+                            </button>
+                        </div>
+                        <button class="comment-section__moreReplies">
+                            <svg viewbox='0 0 24 24'>
+                                <path d="M7 10l5 5 5-5z"></path>
+                            </svg>
+                            <div>View 69 replies</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="comment-section">
+                    <img src="https://yt3.ggpht.com/a/AATXAJymNP-SGCZHiVYa9iDb7J_y6WVruxuXOOeECQ=s48-c-k-c0xffffffff-no-rj-mo" alt="commenter-avatar" class="comment-section__img">
+                    <div class="comment-section__text">
+                        <div class="comment-section__header">
+                            <div class="comment-section__header__name">Froggy Boi</div>
+                            <div class="comment-section__header__date">7 years ago</div>
+                        </div>
+                        <p class="comment-section__content">
+                            Quite a good song.
+                        </p>
+                        <div class="comment-section__bottom">
+                            <button class="comment-section__likeBtns">
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                                </svg>
+                                <div>9.5K</div>
+                            </button>
+                            <button class="comment-section__likeBtns">
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+                                </svg>
+                                <div>REPLY</div>
+                            </button>
+                        </div>
+                        <button class="comment-section__moreReplies">
+                            <svg viewbox='0 0 24 24'>
+                                <path d="M7 10l5 5 5-5z"></path>
+                            </svg>
+                            <div>View 2 replies</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="comment-section">
+                    <img src="https://yt3.ggpht.com/a/AATXAJy_MviB52sVhdXS65-BsofipnBz4oatcY4jxw=s48-c-k-c0xffffffff-no-rj-mo" alt="commenter-avatar" class="comment-section__img">
+                    <div class="comment-section__text">
+                        <div class="comment-section__header">
+                            <div class="comment-section__header__name">Ha Bui</div>
+                            <div class="comment-section__header__date">6 months ago</div>
+                        </div>
+                        <p class="comment-section__content">
+                            Why would they make a song about a murderer? Video KILLED the radio star. #LockUpVideo
+                        </p>
+                        <div class="comment-section__bottom">
+                            <button class="comment-section__likeBtns">
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                                </svg>
+                                <div>14</div>
+                            </button>
+                            <button class="comment-section__likeBtns">
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+                                </svg>
+                                <div>REPLY</div>
+                            </button>
+                        </div>
+                        <button class="comment-section__moreReplies">
+                            <svg viewbox='0 0 24 24'>
+                                <path d="M7 10l5 5 5-5z"></path>
+                            </svg>
+                            <div>View 900 replies</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="comment-section">
+                    <img src="https://yt3.ggpht.com/a/AATXAJzlZzr16izsGHBCHIkO3H7n-UiHyZPCJFEPiQ=s100-c-k-c0xffffffff-no-rj-mo" alt="commenter-avatar" class="comment-section__img">
+                    <div class="comment-section__text">
+                        <div class="comment-section__header">
+                            <div class="comment-section__header__name">PewDiePie</div>
+                            <div class="comment-section__header__date">2 months ago</div>
+                        </div>
+                        <p class="comment-section__content">
+                            Pay no attention to me. I'm not here.
+                        </p>
+                        <div class="comment-section__bottom">
+                            <button class="comment-section__likeBtns">
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                                </svg>
+                                <div>18k</div>
+                            </button>
+                            <button class="comment-section__likeBtns">
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+                                </svg>
+                                <div>REPLY</div>
+                            </button>
+                        </div>
+                        <button class="comment-section__moreReplies">
+                            <svg viewbox='0 0 24 24'>
+                                <path d="M7 10l5 5 5-5z"></path>
+                            </svg>
+                            <div>View 15k replies</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="comment-section">
+                    <img src="https://yt3.ggpht.com/a/AATXAJyrgi6Lt1Dw7wom8Dm-2JVydiG0ap-fev1hUQ=s48-c-k-c0xffffffff-no-rj-mo" alt="commenter-avatar" class="comment-section__img">
+                    <div class="comment-section__text">
+                        <div class="comment-section__header">
+                            <div class="comment-section__header__name">President JimJam</div>
+                            <div class="comment-section__header__date">3 hours ago</div>
+                        </div>
+                        <p class="comment-section__content">
+                            As the leader of this nation, I declare these tunes righteous.
+                        </p>
+                        <div class="comment-section__bottom">
+                            <button class="comment-section__likeBtns">
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                                </svg>
+                                <div>1776</div>
+                            </button>
+                            <button class="comment-section__likeBtns">
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+                                </svg>
+                                <div>REPLY</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-section">
+                    <img src="https://yt3.ggpht.com/a/AATXAJwz4alN-_SuezlBMfoBYkhDopoWRtvSAzuQbw=s48-c-k-c0xffffffff-no-rj-mo" alt="commenter-avatar" class="comment-section__img">
+                    <div class="comment-section__text">
+                        <div class="comment-section__header">
+                            <div class="comment-section__header__name">Dr. Not Real</div>
+                            <div class="comment-section__header__date">16,000 years ago</div>
+                        </div>
+                        <p class="comment-section__content">
+                            You should hire the guy who made this look so neat.
+                        </p>
+                        <div class="comment-section__bottom">
+                            <button class="comment-section__likeBtns">
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                                </svg>
+                                <div>7.5B</div>
+                            </button>
+                            <button class="comment-section__likeBtns">
+                                <svg viewbox='0 0 24 24'>
+                                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path>
+                                </svg>
+                                <div>REPLY</div>
+                            </button>
+                        </div>
+                        <button class="comment-section__moreReplies">
+                            <svg viewbox='0 0 24 24'>
+                                <path d="M7 10l5 5 5-5z"></path>
+                            </svg>
+                            <div>View reply</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar__top">
+                <div id="UpNext">Up next</div>
+                <div id="Autoplay">AUTOPLAY</div>
+                <div class="autoplay-toggle">
+                    <input type="checkbox" id="toggle">
+                    <label for="toggle"></label>
+                </div>
+            </div>
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/H9K8-3PHZOU/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCMyPRXvDWo0NqgK6YxhcIzAohPoQ" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">The Hamsterdance</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">Hampton The Hamster</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">4.5M views</div>
+                        <div>•</div>
+                        <div class="songDate">20 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bottom-borderline"></div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/WMk8UqL48Xw/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBe8RnI9xKTjxPVaoorCft5A8ah6w" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">Batdance</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">Prince</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">5.7M views</div>
+                        <div>•</div>
+                        <div class="songDate">31 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/kgv7U3GYlDY/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCFcCCRt-QzCdjMMj6p8yCwUuh-XQ" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">What a savings</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">GalaxyQuest</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">70M views</div>
+                        <div>•</div>
+                        <div class="songDate">21 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/LJofcODeIqo/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLA4gz1qOPwCaAJc9nMel0PqvaSnHQg" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">Christian Bale Is At Your Party</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">Pigeon</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">9.2M views</div>
+                        <div>•</div>
+                        <div class="songDate">8 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/o0u4M6vppCI/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLD3iok-tCWBVOb1_g7xIX921cSmWA" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">"Shia LaBeouf" Live - Rob Cantor</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">robcantor</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">10B views</div>
+                        <div>•</div>
+                        <div class="songDate">6 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/oe5gaCxWOkg/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLD4senMI8fmCyBJyfpWVJlcfG72Gw" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">Albuquerque - Weird Al Yankovic</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">Weird Al</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">50B views</div>
+                        <div>•</div>
+                        <div class="songDate">17 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/IlMVOa1cDEc/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLB3TvjbdHcrwXPZa6i_Th3M2cZaxA" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">Three Bear and Little Girl</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">GingerPale</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">2M views</div>
+                        <div>•</div>
+                        <div class="songDate">4 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/8SzT1MfAM_Q/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCeITeefP950zBBZEo7Dlx_qL3bLw" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">Riddly Diddly</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">The Simpsons</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">82M views</div>
+                        <div>•</div>
+                        <div class="songDate">27 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/-UYgORr5Qhg/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCoMoMaDPZqbgjwwcNnXfiJeixf4w" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">When you're overqualified for the job</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">Reddit Activity</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">92M views</div>
+                        <div>•</div>
+                        <div class="songDate">23 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/yBLdQ1a4-JI/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLB94dSc-5TlE4J-BS3BCZAQ7HVwug" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">AHHHHH</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">CarrierBK</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">43M views</div>
+                        <div>•</div>
+                        <div class="songDate">3 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/ca3--RuNHtI/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLC9XqK-t6lnBcicY7H8rP6cGUxsTA" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">When you gotta stay fonky</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">Daniel Thrasher</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">5.6M views</div>
+                        <div>•</div>
+                        <div class="songDate">1 year ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/DCkJ5lGPqFs/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCvCmBuUPcrMax-vK6NLdX3HtI1bg" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">Out of Touch (Remastered)</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">Daryl Hall & John Oates</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">14M views</div>
+                        <div>•</div>
+                        <div class="songDate">34 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/kP1AFDDJoeE/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBKrlo9hSzhr3Yvr8-jH7NcrLyCfg" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">It's in the Way That You Use It (1999 Remaster)</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">Eric Clapton</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">2.3M views</div>
+                        <div>•</div>
+                        <div class="songDate">7 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/aiRn3Zlw3Rw/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDIXzy_mOcDVwRkQ313ZLxPhvpAsQ" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">Eric Johnson - Cliffs Of Dover [HQ Studio Version]</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">Some Guy</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">7.6M views</div>
+                        <div>•</div>
+                        <div class="songDate">12 years ago</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar__relatedVideo">
+                <a href="#">
+                    <img src="https://i.ytimg.com/vi/XGPvGzfoJAg/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBKwf4BEVJzz7b5IZ8lmiS4GP935w" alt="Youtube channel picture">
+                </a>
+                <div class="sidebar__relatedVideo__songInfo">
+                    <a href="#">
+                        <div class="songTitle">Walking on a Sunshine</div>
+                    </a>
+                    <a href="#">
+                        <div class="songChannel">K&TW</div>
+                    </a>
+                    <a href="#">
+                        <div class="songViews">132M views</div>
+                        <div>•</div>
+                        <div class="songDate">11 years ago</div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
